@@ -207,8 +207,17 @@ int HashTable::hash_function(string key)
     H_3 = H_3 + D;
     H_4 = H_4 + E;
 
-    // can return any H_i
-    return (H_4 % this->get_k_count());
+    // still experimenting on which gives lowest std dev
+
+    // 2.9717
+    return (H_2 % this->get_k_count());
+
+    // 2.9767
+    // return (H_0 % this->get_k_count());
+
+    // 3.0235
+    // H_4 ^= (H_4 >> 16);
+    // return (H_4 % this->get_k_count());
 }
 
 uint32 get_S(uint32 n, uint32 X)

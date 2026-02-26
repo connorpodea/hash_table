@@ -1,8 +1,8 @@
 /*
 CSE 310 Hash Function DIY Contest
 Instructor: Yiran "Lawrence" Luo
-Your name(s): Connor Podea, Gabe Abarca
-Your team alias:
+Your name(s): Connor Podea
+Your team alias: Connor Podea
 */
 
 #include <iostream>
